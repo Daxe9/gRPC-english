@@ -1,0 +1,18 @@
+// Definire la versione del proto buffer
+syntax = "proto3";
+// Definire il namespace
+package employee;
+
+// service
+service Employee {
+    rpc paySalary(EmployeeRequest) returns (stream EmployeeResponse) {}
+}
+
+message EmployeeRequest {
+    // repeated indica che è un array, int32 è il tipo di valore all'interno dell'array, l'1 è l'id univoco
+    repeated int32 employeeList = 1;
+}
+
+message EmployeeResponse {
+    string message = 1;
+}

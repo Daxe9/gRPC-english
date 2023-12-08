@@ -1,0 +1,16 @@
+{
+  "name": "grpc-node-english",
+  "version": "1.0.0",
+  "description": "",
+  "main": "salary-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.9.12",
+    "@grpc/proto-loader": "^0.7.10",
+    "lodash": "^4.17.21"
+  }
+}
